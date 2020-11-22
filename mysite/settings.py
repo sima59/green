@@ -31,8 +31,11 @@ SECRET_KEY = '@fbb-km*%9%58%7jva+=9j3a(s&ecxlgfyo4#nsn*2bu5gng&)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+#ALLOWED_HOSTS = []
+if settings.DEBUG:
+    ALLOWED_HOSTS = ['*']
+else:
+    ALLOWED_HOSTS = ['greenatlasco.com', 'www.greenatlasco.com', 'localhost', '127.0.0.1']
 SITE_ID = 1
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
