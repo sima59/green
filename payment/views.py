@@ -37,7 +37,7 @@ def payment_process(request):
         else:
             return redirect('payment:canceled')
     else:
-        # generate token
+         #generate token
         client_token = gateway.client_token.generate()
         return render(request,
                       'payment/process.html',

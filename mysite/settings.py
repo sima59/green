@@ -38,7 +38,7 @@ else:
     ALLOWED_HOSTS = ['greenatlasco.com', 'www.greenatlasco.com', 'localhost', '127.0.0.1']
 SITE_ID = 1
 
-CRISPY_TEMPLATE_PACK = 'bootstrap3'
+#CRISPY_TEMPLATE_PACK = 'bootstrap3'
 # Application definition
 
 INSTALLED_APPS = [
@@ -151,7 +151,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'posts/static/')
 # MEDIA/UPLOADS
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
