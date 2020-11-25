@@ -105,7 +105,7 @@ DATABASES = {
       'ENGINE': 'django.db.backends.postgresql_psycopg2',
       'NAME': 'blog' ,
       'USER': 'blog',
-      'PASSWORD': '$Shahryar49',
+      'PASSWORD': 'sima12345',
        'HOST': 'localhost',
         'PORT': '',
     }
@@ -161,7 +161,7 @@ CART_SESSION_ID = 'cart'
 
 # E-mail
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_HOST = os.environ.get('EMAIL_HOST')
+EMAIL_HOST = os.environ.get('simabageri@gmail.com')
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = os.environ.get('EMAIL_PORT')
@@ -190,4 +190,3 @@ ADMINS = (
         os.environ.get('ADMIN_EMAIL')
     ),
 )
-
